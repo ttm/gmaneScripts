@@ -1,0 +1,33 @@
+este diretório reune scripts diversos para baixar, tratar
+e analisar listas do GMANE.org
+
+algum diretório possui as msgs da lista estudada, baixadas uma a uma, com nome do numeral na ordem em que apareceram. Por exemplo, na pasta ./cpp/ há arquivos de nome [0-9][0-9][0-9][0-9][0-9] que são mensagens da lista de emails de desenvolvimento da biblioteca padrão de C++.
+
+analisaRedes(Texto).py -> analysis routines.
+
+utilsRede.py -> canivete suíço em classes.
+
+baixaTudo1_1.py -> baixa as mensagens do GMANE um por um, pois na requisição de várias mensagens de uma vez, chega entre 5 e 7 mil, não mais. Suspeito que haja limite de tempo por requisição, mas não foi encontrada instrução alguma a respeito.
+
+verificaAnalisa.py -> rotina com o propósito de verificar a consistencia dos dados baixados com o script anterior.
+
+fazRedeInteracao -> faz o dígrafo de interação e observa varias medidas.
+
+layoutEstrela.py faz digrafo com peso randomico de Erdos "g" e livre de escala "gl" e faz diferentes layouts com ordenações diferentes dos vértices em formatos circulares, espiralados e em estrela. Falta usar o Graphviz, ddeixar a livre de escala arrumada e implementar layouts de menor repulsa, dentre outros.
+
+layoutDistancias.py faz pequeno estudo sobre disposições de vértices, distâncias e repelências.
+
+=====
+
+
+:                                                              
+\begin{itemize}
+    \item utilsRede.py, with classes for basic data structures, measurements and procedures, like building snapshots of network evolution.     
+    \item analisaRedes2PCA.py, for PCA and other scatterplots.         
+    \item carregaTudo.py, for Spearman and Pearson correlatetion coefficients.
+    \item histogramaSuavizado.py, for making histograms with varying window size.
+    \item verificaAnalisa.py, with routines for time and authos incidences. Deprecated (Incorporated by utilsRede), but has figures of standard deviation.
+    \item setoresRede\_teorico.py, with an illustration of free-scale and Erdos-Renyi distribution. 
+    \item baixaTudo1\_1.py, for downloading messages, one by one.      
+    \item visualization scripts, not identifyed yet..                  
+\end{itemize}
