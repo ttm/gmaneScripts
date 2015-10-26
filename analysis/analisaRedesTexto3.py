@@ -2168,9 +2168,6 @@ tk=k.word_tokenize(t)
 from nltk.corpus import wordnet as wn                                  
 frac4=len([i for i in tk if wn.synsets(i)])/len(tk)
 
-
-
-
 sys.exit()
 texts=[]
 for i in m.ids:
